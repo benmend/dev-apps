@@ -49,15 +49,6 @@ class TodoApp(QWidget):
             self.input_field.clear()
 
 
-class TaskButton(QWidget):
-
-    def __init__(self, parent=None):
-        super(TaskButton, self).__init__(parent)
-        self.button = QPushButton('X')
-        lay = QVBoxLayout(self)
-        lay.addWidget(self.button, alignment=QtCore.Qt.AlignRight)
-        lay.setContentsMargins(0, 0, 0, 0)
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = TodoApp()
